@@ -1,17 +1,23 @@
-.somenewclass {
-    color:blue;
-    font-size:28px;
+.content-header {
+    padding: 4px;
+    background-color: #cadeef;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: #39ace7;
+    font-size: 30px;
+    font-family: cursive;    
+    text-align: center;
 }
 
-ul.table-of-content {
-    color: lightgrey;
+ul.table-of-content-list {
+    background: #cadeef;
+    color: #39ace7;
     font-size: 14px;
-    background: black;
     padding: 10px;
-    border-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
-ul.table-of-content a {
-    text-decoration: none !important;
-    color: lightgrey !important;
+ul.table-of-content-list a {
+    color: #39ace7 !important;
 }
