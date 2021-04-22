@@ -19,5 +19,10 @@ ul.table-of-content-list {
 }
 
 ul.table-of-content-list a {
+    text-decoration: none !important;
     color: #39ace7 !important;
+}
+
+ul.table-of-content-list a:hover {
+    color: #0784b5 !important;
 }
