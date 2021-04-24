@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-#notebook div.inner_cell, div.jp-MarkdownOutput {
-    font-family: 'Arvo', serif;
+div.inner_cell, div.jp-MarkdownOutput {
+    font-family: 'Arvo', serif !important;
 }
 
 .content-header {
@@ -57,7 +57,7 @@ div.markdown-container {
 .content-header {
     background-color: #cadeef;
     border-color: #39ace7;
-    color: #39ace7;
+    color: #39ace7 !important;
 }
 
 ul.table-of-content-list {
