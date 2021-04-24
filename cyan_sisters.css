@@ -1,5 +1,4 @@
-/* Impoting style.css */
-@import url("/main/style.css");
+@import url("https://raw.githubusercontent.com/sprakshith/TestRepo/main/style.css");
 
 div.content-header {
     background-color: #cadeef;
