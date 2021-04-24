@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-body {
+#notebook.inner_cell {
     font-family: 'Arvo', serif;
 }
 
@@ -10,8 +10,7 @@ body {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     color: #39ace7;
-    font-size: 30px;
-    font-family: cursive;    
+    font-size: 30px;   
     text-align: center;
 }
 
