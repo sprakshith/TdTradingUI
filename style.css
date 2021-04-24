@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
+body {
+    font-family: 'Arvo', serif;
+}
+
 .content-header {
     padding: 4px;
     background-color: #cadeef;
