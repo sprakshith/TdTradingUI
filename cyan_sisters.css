@@ -1,0 +1,28 @@
+@import url("style.css");
+
+div.content-header {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7;
+}
+
+ul.table-of-content-list {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7;
+}
+
+ul.table-of-content-list a {
+    color: #39ace7 !important;
+}
+
+ul.table-of-content-list a:hover {
+    color: #0784b5 !important;
+}
+
+.markdown-container {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7;
+
+}
