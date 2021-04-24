@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-#notebook .inner_cell {
+#notebook .inner_cell, .jp-MarkdownOutput {
     font-family: 'Arvo', serif;
 }
 
