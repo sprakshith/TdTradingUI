@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-#notebook .inner_cell, .jp-MarkdownOutput {
+#notebook div.inner_cell, div.jp-MarkdownOutput {
     font-family: 'Arvo', serif;
 }
 
-div.content-header {
+.content-header {
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    font-size: 30px !important;
     border-right: 4px solid;
     border-left: 4px solid;
     text-align: center;
@@ -36,7 +35,7 @@ ul.table-of-content-list a:hover {
     text-decoration: underline !important;
 }
 
-.markdown-container {
+div.markdown-container {
     border-right: 4px solid;
     border-left: 4px solid;
     padding: 5px 10px;
@@ -46,7 +45,7 @@ ul.table-of-content-list a:hover {
 
 /* All the Color Related codes are below ::: THEME ::: CYAN SISTERS */
 
-div.content-header {
+.content-header {
     background-color: #cadeef;
     border-color: #39ace7;
     color: #39ace7;
@@ -66,7 +65,7 @@ ul.table-of-content-list a:hover {
     color: #0784b5 !important;
 }
 
-.markdown-container {
+div.markdown-container {
     background-color: #cadeef;
     border-color: #39ace7;
     color: #39ace7;
