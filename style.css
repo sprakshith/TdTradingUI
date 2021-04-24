@@ -43,3 +43,7 @@ ul.table-of-content-list a:hover {
     border-radius: 8px;
     margin: 8px 0px;
 }
+
+.somenewclass {
+    color: red;
+}
