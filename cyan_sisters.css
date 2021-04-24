@@ -28,3 +28,7 @@ div.markdown-container {
     border-color: #39ace7;
     color: #39ace7 !important;
 }
+
+div.markdown-container h1, div.markdown-container h2, div.markdown-container h3, div.markdown-container h4{
+    color: #39ace7 !important;
+}
