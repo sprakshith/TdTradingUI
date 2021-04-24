@@ -5,6 +5,7 @@ div.inner_cell, div.jp-MarkdownOutput {
 }
 
 .content-header {
+    font-family: 'Arvo', serif !important;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-right: 4px solid;
@@ -14,6 +15,7 @@ div.inner_cell, div.jp-MarkdownOutput {
 }
 
 ul.table-of-content-list {
+    font-family: 'Arvo', serif !important;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-right: 4px solid;
@@ -45,6 +47,7 @@ ul.table-of-content-list a:hover {
 }
 
 div.markdown-container {
+    font-family: 'Arvo', serif !important;
     border-right: 4px solid;
     border-left: 4px solid;
     padding: 5px 10px;
@@ -63,7 +66,7 @@ div.markdown-container {
 ul.table-of-content-list {
     background-color: #cadeef;
     border-color: #39ace7;
-    color: #39ace7;
+    color: #39ace7 !important;
 }
 
 ul.table-of-content-list a {
@@ -77,5 +80,5 @@ ul.table-of-content-list a:hover {
 div.markdown-container {
     background-color: #cadeef;
     border-color: #39ace7;
-    color: #39ace7;
+    color: #39ace7 !important;
 }
