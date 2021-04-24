@@ -1,11 +1,9 @@
 /* THEME ::: CYAN SISTERS */
 
-['#debce1', '#ddace3', '#a176c6', '#8653af']
-
 h1.content-header, h2.content-header, h3.content-header, h4.content-header {
     background-color: #debce1;
     border-color: #a176c6;
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
 
 ul.table-of-content-list {
@@ -14,23 +12,23 @@ ul.table-of-content-list {
 }
 
 ul.table-of-content-list li {
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
 
 ul.table-of-content-list a {
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
 
 ul.table-of-content-list a:hover {
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
 
 div.markdown-container {
     background-color: #debce1;
     border-color: #a176c6;
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
 
 div.markdown-container h1, div.markdown-container h2, div.markdown-container h3, div.markdown-container h4 {
-    color: #ddace3 !important;
+    color: #a176c6 !important;
 }
