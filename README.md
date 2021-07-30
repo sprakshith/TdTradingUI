@@ -1,2 +1,2 @@
 # techdeciphers.github.io
-This includes the HTML for techdeciphers.in.
+This includes the HTML for http://techdeciphers.in/
