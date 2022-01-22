@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Testing API</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container mt-5 mb-5">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>DATE</th>
+						<th>DAYS</th>
+						<th>P&L</th>
+						<th>VOLUME</th>
+						<th>MACD</th>
+						<th>MACDS</th>
+						<th>RSI14</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+	
+	<script>
+	
+	$(document).ready(function(){
+		$.ajax({
+			type: "GET",
+			url: "https://raw.githubusercontent.com/sprakshith/sprakshith.github.io/main/P%26L_HDFCBANK.json",
+			dataType: 'json',
+			success: function(response){
+				for(var index in response) {
+					var htmlContent = '<tr>' +
+					                  '<td>' + response[index]['DATE'] + '</td>' +
+									  '<td>' + response[index]['DAYS'] + '</td>' +
+									  '<td>' + response[index]['P&L'] + '</td>' +
+									  '<td>' + response[index]['VOLUME'] + '</td>' +
+									  '<td>' + response[index]['MACD'] + '</td>' +
+									  '<td>' + response[index]['MACDS'] + '</td>' +
+									  '<td>' + response[index]['RSI14'] + '</td>' +
+									  '</tr>';
+									  
+					$(".table tbody").append(htmlContent);
+				}
+			}
+		});
+	});
+	
+	</script>
+</html>
