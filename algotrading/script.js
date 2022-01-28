@@ -1,5 +1,5 @@
-var DOMAIN = "http://192.168.0.243:105/";
-// var DOMAIN = "https://tdtrading.herokuapp.com/";
+// var DOMAIN = "http://192.168.0.243:105/";
+var DOMAIN = "https://tdtrading.herokuapp.com/";
 
 function populate_pattern_occurances() {
     activateLoader();
