@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algo Trading</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="spinner-border" role="status">
+      <span class="sr-only"></span>
+    </div>
+
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="javascript:void(0)">Algo Trading</a>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Candle Patterns</a>
+                    <a class="nav-item nav-link active" href="javascript:void(0)">Analysis</a>
+                    <a class="nav-item nav-link" href="calculate.html">Calculate</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="ticker">Stock Name:</label>
+                    <select class="form-control" id="ticker"></select>
+                </div>
+                <div class="d-flex flex-row">
+                    <button type="button" class="btn btn-primary mt-5" id="fetch_profit_lost_data">Get Results</button>
+                </div>
+            </div>
+
+
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="pattern">Pattern:</label>
+                    <select class="form-control" id="pattern"></select>
+                </div>
+                <!--
+          <div class="d-flex flex-row-reverse">
+            <button type="button" class="btn btn-primary mt-5" id="refresh_stocks_results" disabled>Refresh Patterns</button>
+          </div>
+          -->
+            </div>
+
+        </div>
+
+        <div class="table-container" id="profit_loss_div">
+
+            <div class="d-flex justify-content-center">
+                <h3>Profit and Loss: <span id="ticker-name"></span> for <span id="pattern-name"></span></h3>
+            </div>
+
+            <table class="cell-border mt-5" id="profit-loss-table">
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>DAYS</th>
+                        <th>P&L</th>
+                        <th>VOLUME</th>
+                        <th>MACD</th>
+                        <th>MACDS</th>
+                        <th>RSI14</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var DOMAIN = "http://192.168.0.243:105/";
+    //var DOMAIN = "https://tdtrading.herokuapp.com/";
+
+    $(document).ready(function() {
+        populate_tickers();
+        populate_patterns();
+
+        $("#refresh_stocks_results").click(function() {
+            refresh_stocks_results();
+        });
+
+        $("#fetch_profit_lost_data").click(function() {
+            fetch_profit_lost_data();
+        });
+
+        activateLoader();
+        setTimeout(fetch_profit_lost_data, 800);
+    });
+
+</script>
+
+</html>
