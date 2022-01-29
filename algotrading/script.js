@@ -14,7 +14,7 @@ function populate_pattern_occurances() {
                 rowClass = response[index]['Trend'] == "Bullish" ? "profit-class" : rowClass
                 rowClass = response[index]['Trend'] == "Bearish" ? "loss-class" : rowClass
 
-                var htmlContent = '<tr class="'+ rowClass +'">' +
+                var htmlContent = '<tr class="' + rowClass + '">' +
                     '<td>' + response[index]['Slno'] + '</td>' +
                     '<td>' + response[index]['Date'] + '</td>' +
                     '<td>' + response[index]['Name'] + '</td>' +
@@ -96,7 +96,7 @@ function fetch_profit_lost_data() {
                 rowClass = response[index]['Trend'] == "Bullish" ? "profit-class" : rowClass
                 rowClass = response[index]['Trend'] == "Bearish" ? "loss-class" : rowClass
 
-                var htmlContent = '<tr class="'+ rowClass +'">' +
+                var htmlContent = '<tr class="' + rowClass + '">' +
                     '<td>' + response[index]['DATE'] + '</td>' +
                     '<td>' + response[index]['DAYS'] + '</td>' +
                     '<td>' + response[index]['P&L'] + '</td>' +
