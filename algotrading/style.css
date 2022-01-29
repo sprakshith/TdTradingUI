@@ -11,7 +11,7 @@ th {
 }
 
 .navigation-bar .navbar {
-    padding: 10px 45px;
+    padding: 10px 50px;
 }
 
 .spinner-border {
@@ -22,6 +22,21 @@ th {
 
 .spinner-border {
     display: none;
+}
+
+.profit-class {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.loss-class {
+    color: #df514c;
+    font-weight: bold;
+}
+
+.neutral-class {
+    color: #f9d62c;
+    font-weight: bold;
 }
 
 @media (min-width: 720px) {

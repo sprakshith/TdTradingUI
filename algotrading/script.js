@@ -10,7 +10,11 @@ function populate_pattern_occurances() {
         dataType: 'json',
         success: function(response) {
             for (var index in response) {
-                var htmlContent = '<tr>' +
+                var rowClass = "neutral-class";
+                rowClass = response[index]['Trend'] == "Bullish" ? "profit-class" : rowClass
+                rowClass = response[index]['Trend'] == "Bearish" ? "loss-class" : rowClass
+
+                var htmlContent = '<tr class="'+ rowClass +'">' +
                     '<td>' + response[index]['Slno'] + '</td>' +
                     '<td>' + response[index]['Date'] + '</td>' +
                     '<td>' + response[index]['Name'] + '</td>' +
@@ -84,11 +88,15 @@ function fetch_profit_lost_data() {
         success: function(response) {
             $("#ticker-name").html($("#ticker").val());
             $("#pattern-name").html($("#pattern").val());
-
+            console.log(response)
             destroyDataTable();
 
             for (var index in response) {
-                var htmlContent = '<tr>' +
+                var rowClass = "neutral-class";
+                rowClass = response[index]['Trend'] == "Bullish" ? "profit-class" : rowClass
+                rowClass = response[index]['Trend'] == "Bearish" ? "loss-class" : rowClass
+
+                var htmlContent = '<tr class="'+ rowClass +'">' +
                     '<td>' + response[index]['DATE'] + '</td>' +
                     '<td>' + response[index]['DAYS'] + '</td>' +
                     '<td>' + response[index]['P&L'] + '</td>' +
